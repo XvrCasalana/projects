@@ -1,0 +1,12 @@
+<body>
+  <h1 class="text-center"> Countries </h1>
+  <br />
+  <br />
+  <div class="countries">
+    <div class="country" *ngFor="let country of countries">
+      <h3 class="country-name">{{country.name}}</h3>
+      <img class="country-flag" [src]="country.flag" (click)="goToDetails(country.name)">
+    </div>
+  </div>
+
+</body>
